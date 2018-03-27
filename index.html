@@ -57,8 +57,8 @@ section {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 2rem;
+  margin: 0.67rem 0;
 }
 
 /* Grouping content
@@ -458,18 +458,40 @@ template {
   display: none;
 }
 
+body {padding:4rem;font-size:2rem;line-height:3rem;font-family:sans-serif}
+p {margin:0 0 3rem 0;}
+.em {font-size:1.3rem;}
+#projects {padding:0;margin:0 0 0 0;list-style:none;}
+#projects li {margin-bottom:2rem;}
+#projects img {height:2rem;padding-right:0.5rem;margin-bottom:-4px;}
+#projects a {text-decoration:none;}
+#projects a:hover {text-decoration:underline;}
+#project-kloomba a {color:#b80043}
+#project-kashalot a {color:#0a7ed0;}
+#project-speshka a {color:#775dab;}
+#project-secret {color:#777;}
+
+@media(max-width:529px) {
+  body {padding:1.5rem;font-size:1rem;line-height:1.5rem;font-family:sans-serif}
+  p {margin:0 0 1rem 0;}
+  .em {font-size:0.7rem;}
+  #projects li {margin-bottom:2rem;}
+  #projects img {height:1rem;padding-right:0.3rem;margin-bottom:-2px;}
+}
 </style>
+
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 </head>
 <body>
-
-<p>Привет, это Гипотеза.</p>
-<p>Мы занимемся созданием и развитием торговых площадок в украинском интернете.</p>
-<p>Наши проекты:</p>
-<ul>
-  <li><a href="https://kloomba.com/"><img src="/klumba-logo-512.png" width="200" height="200"><br>Клумба</a></li>
-  <li><a href="https://kashalot.com/"><img src="/ksh512blue-tr.png" width="200" height="200"><br>Кашалот</a></li>
-  <li><a href="https://speshka.com/"><img src="/speshka-logo-512.png" width="200" height="200"><br>Спешка</a></li>
+  
+<p>Привет, это &#171;<strong>Гипотеза</strong>&#187;, <i class="em em-flag-ua"></i>&nbsp;украинская продуктовая интернет-компания.</p><p>Запускаем&nbsp;<i class="em em-rocket"></i> и развиваем собственные проекты в украинском интернете. Специализируемся на торговых площадках (маркетплейсах), <i class="em em-shopping_trolley"></i> электронной комерции, <i class="em em-shirt"></i>&nbsp;одежде, <i class="em em-high_heel"></i>&nbsp;обуви и <i class="em em-baby_bottle"></i>&nbsp;детских товарах. Работаем для украинских <i class="em em-woman-girl-boy"></i>&nbsp;женщин, мам и хозяек.<br>
+</p>
+<ul id="projects">
+  <li id="project-kloomba"><a href="https://kloomba.com/"><img src="klumba-logo-512.png"><em>Клумба</em></a>, проверенные продавцы одежды, обуви и детских товаров. Работает с апреля 2008-го.</li>
+  <li id="project-kashalot"><a href="https://kashalot.com/"><img src="ksh512blue-tr.png"><em>Кашалот</em></a>, быстрые аукционы одежды, обуви и товаров для всей семьи. Работает с мая 2016-го.</li>
+  <li id="project-speshka"><a href="https://speshka.com/"><img src="speshka-logo-512.png"><em>Спешка</em></a>, совместные покупки. Работает с осени 2017-го.</li>
+  <li id="project-secret"><em><i class="em em-speak_no_evil"></i> Новый проект</em></a>, запустим в этом году.</li>
 </ul>
 
 </body>
