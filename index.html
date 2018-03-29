@@ -9,6 +9,7 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 <style>
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -458,27 +459,40 @@ template {
   display: none;
 }
 
-body {padding:4rem;font-family:sans-serif;max-width:1500px;margin-right:auto;}
-p {margin:0;}
-a {text-decoration:none;}
+html {font-size:16px;}
+body {padding:5rem;color:#333;font-family:"PT Sans", sans-serif;max-width:1300px;margin-right:auto;}
+p {margin:1rem 0 1rem 0;}
+a {text-decoration:none;font-style:italic;color:#777;}
 a:hover {text-decoration:underline;}
-h2 {margin:2em 0 1rem 0;}
-
+h1 {margin:0;}
+h2 {margin:4rem 0 1rem 0;}
 body, p, h1, h2 {font-size:2rem;line-height:3rem;}
+.nowrap {white-space:nowrap;}
 
-.em {font-size:1.3rem;margin-bottom:7px;}
+.em {font-size:1.1rem;margin-bottom:7px;}
 .list-unstyled {padding:0;margin:0;list-style:none;}
 .list-unstyled li {margin-bottom:1rem;}
-#projects img {height:2rem;padding-right:0.5rem;margin-bottom:-4px;}
+#projects img {height:1.9rem;padding-right:0.5rem;margin-bottom:-4px;}
 #project-kloomba a {color:#b80043}
 #project-kashalot a {color:#0a7ed0;}
 #project-speshka a {color:#775dab;}
 #project-secret {color:#777;}
 
+@media(max-width:768px) {
+  body {padding:3rem;}
+  h2 {margin-top:3rem;}
+  body, p, h1, h2 {font-size:1.5rem;line-height:2rem;}
+  .em {font-size:0.9rem;margin-bottom:3px;}
+  .list-unstyled li {margin-bottom:1rem;}
+  #projects img {height:1.5rem;padding-right:0.3rem;margin-bottom:-4px;}
+}
+
 @media(max-width:529px) {
   body {padding:1.5rem;}
+  h1 {margin-top:1rem;}
+  h2 {margin-top:2rem;}
   body, p, h1, h2 {font-size:1rem;line-height:1.5rem;}
-  .em {font-size:0.7rem;margin-bottom:3px;}
+  .em {font-size:0.6rem;margin-bottom:3px;}
   .list-unstyled li {margin-bottom:1rem;}
   #projects img {height:1rem;padding-right:0.3rem;margin-bottom:-2px;}
 }
@@ -486,13 +500,22 @@ body, p, h1, h2 {font-size:2rem;line-height:3rem;}
 
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116603612-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-116603612-1');
+</script>
+
 </head>
 <body>
 
-<h1>Привет, это &#171;<strong>Гипотеза</strong>&#187;, <i class="em em-flag-ua"></i>&nbsp;украинская продуктовая интернет-компания.</h1>
+<h1>Привет, это &#171;Гипотеза&#187;<!--, <i class="em em-flag-ua"></i>&nbsp;украинская интернет-компания--></h1>
 
 <p>
-<i class="em em-rocket"></i> Запускаем и развиваем собственные проекты в украинском интернете. <i class="em em-shopping_trolley"></i> Специализируемся на торговых площадках, электронной комерции, одежде, обуви и детских товарах. <i class="em em-woman-girl-boy"></i> Работаем для украинских женщин, мам и хозяек.<br>
+<span class="nowrap"><i class="em em-rocket"></i> Мы запускаем</span> и развиваем собственные проекты в украинском интернете. <span class="nowrap"><i class="em em-shopping_trolley"></i> Специализируемся</span> на торговых площадках, электронной комерции, одежде, обуви и детских товарах. <span class="nowrap"><i class="em em-woman-girl-boy"></i> Работаем</span> для украинских женщин, мам и хозяек.<br>
 </p>
 
 <h2>Проекты</h2>
@@ -505,10 +528,11 @@ body, p, h1, h2 {font-size:2rem;line-height:3rem;}
 
 <h2>Вакансии</h2>
 <ul class="list-unstyled">
-  <li>&mdash; Веб-дизайнер</li>
-  <li>&mdash; Веб-разработчик</li>
-  <li>&mdash; Маркетинг-директор</li>
+  <li>&mdash; Веб-дизайнер.<!--br>Ключевые слова: mobile-first, UX, UI</li-->
+  <li>&mdash; Веб-разработчик (PHP). <!--(PHP7, high-load, ZF1, MySQL, MongoDB, Sphinx, RabbitMQ, AWS).<br>Управление и общение через Github/Jira/Slack, расслабленный SCRUM (ежедневные стендапы, без жестких спринтов и дедлайнов), сontinuous integration.--></li>
 </ul>
+<p>Как мы работаем: у нас нет офиса, все работают удаленно. У нас нет рабочих часов, есть обязательно время ежедневного созвона. Мы не работаем на выходных и государственных праздниках.</p>
+<p><a href="mailto:tov.gipoteza@gmail.com">Пишите письма</a>.</p>
 
 
 </body>
